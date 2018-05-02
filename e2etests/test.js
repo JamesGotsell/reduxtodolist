@@ -1,5 +1,6 @@
-/* global describe, it, browser */
+/* global describe, it, browser l, import */
 expect = require('chai').expect;
+
 
 describe('TodoList App', () => {
   it('Should load with the right title', () => {
@@ -16,5 +17,6 @@ describe('TodoList App', () => {
     const actual = browser.element('.todo-text').getText();
 
     expect(actual).to.equal(todoText);
+
   });
 });
